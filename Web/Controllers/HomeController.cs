@@ -12,7 +12,7 @@ namespace Web.Controllers
 {
     public class HomeController : Controller
     {
-        readonly UserManagerApp _userManagerApp = new UserManagerApp();
+        readonly UserManagerApp _userManagerApp = new UserManagerApp();//This
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
