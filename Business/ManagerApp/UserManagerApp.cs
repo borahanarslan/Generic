@@ -7,6 +7,7 @@ namespace Business.ManagerApp
 {
    public class UserManagerApp:ManagerBase<ApplicationUser>
     {
+
       
     }
 }

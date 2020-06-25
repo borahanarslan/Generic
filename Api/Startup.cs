@@ -40,7 +40,7 @@ namespace Api
             //   });
             services.AddTransient<UserManagerApp>();
             services.AddDbContext<DatabaseContext>(options =>
-               options.UseSqlServer(Configuration.GetConnectionString("ConnectionStrings")));
+               options.UseSqlServer(Configuration["ConnectionStrings:SqlConStr"]));
 
            services.AddIdentity<ApplicationUser, IdentityRole>()
                .AddEntityFrameworkStores<DatabaseContext>()
